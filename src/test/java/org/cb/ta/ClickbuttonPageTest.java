@@ -1,6 +1,7 @@
 package org.cb.ta;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ClickbuttonPageTest {
@@ -14,12 +15,12 @@ public class ClickbuttonPageTest {
     @Test
     public void webelementclickbuttoncontrol(){
 
-        clickbuttonsPage.webelememntclickbuttoncontroll();
+        Assert.assertEquals(true,clickbuttonsPage.webelememntclickbuttoncontroll());
     }
     @Test
     public void jsclickbuttoncontrol(){
 
-        clickbuttonsPage.javascriptclickbuttoncontroll();
+        Assert.assertTrue(clickbuttonsPage.javascriptclickbuttoncontroll());
     }
     @Test
     public void clickwbbutton(){
